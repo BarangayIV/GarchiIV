@@ -961,6 +961,9 @@ button[type="submit"]:hover {
         padding: 5px;
         margin-left: 2px;
     }
+       .hero-text p {
+        font-size: 15px;
+    }
     .top-image {
         width: 150px;
         height: 150px;
@@ -1015,16 +1018,16 @@ button[type="submit"]:hover {
 }
 
 .modal-content {
-    width: 70%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 800px;
 }
 h2 {
     font-size: 1rem;
 }
 
 .modal img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     object-fit: cover;
 }
 h3 {
