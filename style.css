@@ -997,6 +997,9 @@ button[type="submit"]:hover {
 .banner-ourproject {
     height: 10vh;
 }
+.article-item {
+    flex-basis: calc(100% - 25px);
+}
 .article-item h2 {
     font-size: 15px;
 }
