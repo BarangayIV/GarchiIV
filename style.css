@@ -1011,6 +1011,7 @@ button[type="submit"]:hover {
 }
 
 .modal-content {
+    margin-top: 15px
     width: 70%;
     max-width: 400px;
 }
