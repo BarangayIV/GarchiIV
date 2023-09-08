@@ -3,24 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
 }
-.scrolled {
-    background-color: #333;
-}
-
 body{
     font-family: "Poppins", sans-serif;
     background-color: #f4f4f4;
 
 }
-a, button, input, select, textarea {
-    -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
-    outline: none;
-}
-
 a{
     text-decoration: none;
 }
@@ -39,6 +29,14 @@ h6{
     color: #6c6c6c;
     font-weight: normal;
 }
+/* Remove tap highlight on touch devices */
+/* Remove tap highlight on touch devices */
+a, button, input, select, textarea {
+    -webkit-tap-highlight-color: transparent;
+    outline: none; /* Optional: Remove outline on focus */
+}
+
+
 
 .nav{
     position: fixed;
@@ -68,7 +66,7 @@ h6{
     font-weight: bold;
 }
 .menu a:hover {
-    color: #d3531a; /* Change the link color on hover */
+    color: #d3531a;
 }
 #mobile{
     display: none;
@@ -81,13 +79,7 @@ h6{
 #mobile:hover{
   color: #d3531a;
 }
-a, button {
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-a:active, button:active {
-    background-color: #333; /* Change background color */
-    transform: scale(0.95); /* Slightly scale down the element */
-}
+
 #close{
     display: none;
     color: #fff;
@@ -96,14 +88,16 @@ a:active, button:active {
     cursor: pointer;
 }
 #close:hover {
-    color: #d3531a; /* Change the close (X) color on hover */
+    color: #d3531a; 
 }
 
 .nav {
     transition: background-color 0.3s;
 }
 
-
+.scrolled {
+    background-color: #333;
+}
 
 
   .btn:hover {
@@ -198,7 +192,6 @@ a:active, button:active {
     color: #fff;
 }
 
-/* Styles for the mobile menu icon */
 
 #close{
     display: none;
@@ -299,7 +292,6 @@ a:active, button:active {
     flex-wrap: wrap;
 }
 
-/* Styling for each column */
 .column{
     flex: 1;
     max-width: 50%;
@@ -375,7 +367,6 @@ a:active, button:active {
     border-radius: 50%;
 }
 
-/* Style for the text container */
 .text-container {
     flex: 1;
     padding: 20px;
@@ -463,15 +454,15 @@ a:active, button:active {
     transform: scale(1.05);
 }
 .article-item {
-    flex-basis: calc(25% - 20px); /* 25% width with some margin */
-    margin: 10px; /* Margin between columns */
-    background-color: #fff; /* Background color for each column */
-    padding: 10px; /* Padding within each column */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for each column */
-    border-radius: 5px; /* Rounded corners for each column */
+    flex-basis: calc(25% - 20px); 
+    margin: 10px;
+    background-color: #fff; 
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
 }
 
-/* Additional styling for your article content here */
+
 .article-item h2 {
     font-size: 18px;
 }
@@ -505,9 +496,9 @@ a:active, button:active {
 
 
 
-/* Style the modal */
+
 .modal {
-    display: none; /* Hide the modal by default */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
@@ -515,7 +506,7 @@ a:active, button:active {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .modal img {
     width: 300px;
@@ -536,7 +527,7 @@ a:active, button:active {
     text-align: center;
 }
 
-/* Style the close button */
+
 .close {
     position: absolute;
     right: 10px;
@@ -547,7 +538,7 @@ a:active, button:active {
     cursor: pointer;
 }
 
-/* Style the overlay background when modal is open */
+
 .modal.active {
     display: block;
 }
@@ -562,10 +553,10 @@ a:active, button:active {
 
 
 
-/* Center the countdown timer and make it responsive */
+
 .container-cb {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -574,7 +565,7 @@ a:active, button:active {
 
 #countdown {
     display: flex;
-    justify-content: space-between; /* Create space between columns */
+    justify-content: space-between;
     align-items: center;
     background-color: #000;
     padding: 20px;
@@ -583,13 +574,13 @@ a:active, button:active {
     max-width: 100%;
 }
 
-/* Style each column */
+
 .column {
     text-align: center;
-    width: 20%; /* Adjust the width as needed */
+    width: 20%; 
 }
 
-/* Style countdown labels */
+
 .countdown-label {
     font-size: 14px;
     color: #ccc;
@@ -597,20 +588,20 @@ a:active, button:active {
     text-transform: uppercase;
 }
 
-/* Style numbers */
+
 .column span {
     font-size: 48px; 
     font-weight: bold;
     color: #fff;
     background-color: #333;
     border-radius: 50%;
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+    width: 100px; 
+    height: 100px; 
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin: 0 auto; /* Center each column */
+    margin: 0 auto;
 }
 
 
@@ -729,7 +720,7 @@ a:active, button:active {
 }
 
 
-/* Style for the footer */
+
 .footer {
     background-color: #333;
     color: #fff;
@@ -797,7 +788,7 @@ button[type="submit"]:hover {
     background-color: #ff6b3f;
 }
 
-/* Style for the Facebook icon */
+
 .facebook-icon img {
     width: 40px;
     height: 40px;
@@ -806,14 +797,14 @@ button[type="submit"]:hover {
     padding: 5px;
 }
 
-/* Copyright text style */
+
 .copyright {
     margin-top: 20px;
     font-size: 14px;
     opacity: 0.7;
 }
 
-/* Media query for responsiveness */
+
 
 
 
@@ -1021,7 +1012,6 @@ button[type="submit"]:hover {
 }
 
 .modal-content {
-    margin-top: 15px
     width: 70%;
     max-width: 400px;
 }
