@@ -91,9 +91,7 @@ a:active, button:active {
     transition: background-color 0.3s;
 }
 
-.scrolled {
-    background-color: #333;
-}
+
 
 
   .btn:hover {
