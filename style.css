@@ -509,7 +509,7 @@ a, button, input, select, textarea {
     background-color: rgba(0, 0, 0, 0.7);
 }
 .modal img {
-    width: 300px;
+    width: 500px;
     height: 300px;
     object-fit: cover;
 }
